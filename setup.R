@@ -3,7 +3,7 @@
 # 注意：首次安装 Bioconductor 包较慢（约几分钟到十几分钟），属正常现象。
 
 if (!requireNamespace("BiocManager", quietly = TRUE)) {
-  install.packages("BiocManager")
+  install.packages("BiocManager", repos = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
 }
 
 # Bioconductor 包
@@ -30,7 +30,7 @@ for (p in bioc_pkgs) {
 
 for (p in cran_pkgs) {
   if (!requireNamespace(p, quietly = TRUE)) {
-    install.packages(p)
+    install.packages(p, repos = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
   }
 }
 
