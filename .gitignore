@@ -1,0 +1,15 @@
+# 数据与结果不提交，用脚本重新生成
+data/
+results/
+
+# R 相关
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# 系统文件
+.DS_Store
+Thumbs.db
+__pycache__/
