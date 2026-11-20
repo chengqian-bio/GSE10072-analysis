@@ -51,4 +51,14 @@ source("03_model.R")           # LASSO + ROC
 | GO_BP.csv / GO_dotplot.png | GO 富集结果 |
 | KEGG.csv / KEGG_dotplot.png | KEGG 富集结果 |
 | lasso_genes.txt | LASSO 筛选出的特征基因 |
-| roc.png | 测试集 ROC 曲线 |
+| roc.png | 10 折交叉验证 ROC 曲线 |
+
+## 结果预览
+
+![火山图](results/volcano.png)
+
+![GO 富集](results/GO_dotplot.png)
+
+![KEGG 富集](results/KEGG_dotplot.png)
+
+![ROC 曲线](results/roc.png)

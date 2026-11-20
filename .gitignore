@@ -1,6 +1,5 @@
-# 数据与结果不提交，用脚本重新生成
+# 原始数据不提交（由 download_data.R 重新下载）；结果图/表提交以便展示
 data/
-results/
 
 # R 相关
 .Rproj.user/
