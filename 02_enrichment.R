@@ -2,6 +2,7 @@
 # 前置：先运行 01_deg_analysis.R 生成 results/DEG_all.csv
 
 suppressPackageStartupMessages({
+  library(Biobase)   # 提供 exprs() / pData() / fData()
   library(clusterProfiler)
   library(org.Hs.eg.db)
 })

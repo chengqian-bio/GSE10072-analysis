@@ -3,6 +3,7 @@
 # 前置：先运行 download_data.R 生成 data/GSE10072_eset.rds
 
 suppressPackageStartupMessages({
+  library(Biobase)   # 提供 exprs() / pData() / fData()
   library(glmnet)
   library(pROC)
 })

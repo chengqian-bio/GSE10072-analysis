@@ -2,6 +2,7 @@
 # 前置：先运行 download_data.R 生成 data/GSE10072_eset.rds
 
 suppressPackageStartupMessages({
+  library(Biobase)   # 提供 exprs() / pData() / fData()
   library(limma)
   library(ggplot2)
   library(pheatmap)
@@ -73,7 +74,7 @@ pdf("results/heatmap_top50.pdf", width = 10, height = 12)
 pheatmap(mat,
          show_rownames = FALSE,
          annotation_col = data.frame(Group = group, row.names = colnames(mat)),
-         main = "Top 50 差异表达基因")
+         main = "Top 50 DEGs")
 dev.off()
 cat("已保存 results/heatmap_top50.pdf\n")
 
